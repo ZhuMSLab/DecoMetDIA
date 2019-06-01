@@ -1,0 +1,21 @@
+Package: DecoMetDIA
+Type: Package
+Title: DecoMetDIA: Deconvolution of Multiplexed MS/MS Spectra for
+        Metabolite Identification in SWATH-MS based Untargeted
+        Metabolomics
+Version: 1.0.0
+Date: 2019-05-31
+Author: Yandong Yin
+Maintainer: Zhulab <zhulab@sioc.ac.cn>
+Description: DecoMetDIA picks peaks from SWATH acquired data with XCMS and
+     extracts MS2 EICs under related SWATH window for each feature of different
+     sample. Deconvolution algorithms are applied to MS2 EICs for each feature
+     and thus MS2 spectra are generated. The features are identified by matching
+     the obtained spectra with librarial ones.
+License: GPL (>= 2)
+Imports: Rcpp, xcms, CAMERA, BiocParallel, Cairo, splus2R, gtools
+Depends: Rcpp, xcms, CAMERA, BiocParallel, Cairo, splus2R, gtools
+LinkingTo: Rcpp
+RoxygenNote: 6.1.0
+NeedsCompilation: yes
+Packaged: 2019-06-01 02:23:47 UTC; yinyd
