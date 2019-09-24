@@ -9,4 +9,5 @@ The install can be done with ```install_github()```  method in devtools as follo
 devtools::install_github("ZhuMSLab/DecoMetDIA")
 ```
 ## Reference
-Yin, Yandong, Ruohong Wang, Yuping Cai, Zhuozhong Wang, and Zheng-Jiang Zhu. "DecoMetDIA: Deconvolution of Multiplexed MS/MS Spectra for Metabolite Identification in SWATH-MS based Untargeted Metabolomics." Analytical chemistry (2019).
+Yin, Y., Wang, R., Cai, Y., Wang, Z. & Zhu, Z.-J. **DecoMetDIA: Deconvolution of Multiplexed MS/MS Spectra for Metabolite Identification in SWATH-MS-Based Untargeted Metabolomics**. *Anal. Chem*. 91, 11897–11904 (**2019**).
+
