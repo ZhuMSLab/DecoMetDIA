@@ -11,3 +11,6 @@ devtools::install_github("ZhuMSLab/DecoMetDIA")
 ## Reference
 Yin, Y., Wang, R., Cai, Y., Wang, Z. & Zhu, Z.-J. **DecoMetDIA: Deconvolution of Multiplexed MS/MS Spectra for Metabolite Identification in SWATH-MS-Based Untargeted Metabolomics**. *Anal. Chem*. 91, 11897–11904 (**2019**).
 
+## License
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a> 
+This work is licensed under the Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
