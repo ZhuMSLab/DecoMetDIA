@@ -97,7 +97,9 @@ DecoMetDIA <- function(d.in = '.',
   filed.ms1.filter <- match.arg(filed.ms1.filter)
 
   d.out <- CreateResultDir(d.out, is.overwrite = FALSE)
-  files <- list.files(d.in, recursive = TRUE, full.names = TRUE, pattern = '(?i)mzxml$')
+  files_mzxml <- list.files(d.in, recursive = TRUE, full.names = TRUE, pattern = '(?i)mzxml$')
+  files_mzml <- list.files(d.in, recursive = TRUE, full.names = TRUE, pattern = '(?i)mzml$')
+  files <- c(files_mzxml, files_mzml)
 
   nSlaves <- min(parallel::detectCores() - 1, nSlaves, length(files))
   bpparam <- SnowParam(workers = nSlaves, type = 'SOCK')
