@@ -104,9 +104,19 @@ setMethod(
       rt.apex.ms1 <- peak.ms1.ext.smooth[idx.apex.ms1, 'rt']
       if (nrow(peak.ms1.smooth) < 4) {
         return(NULL)
-      }
+      }      
 
       spec.exp.ext <- scan.ms2[idx.ms2.ext]
+      
+      ##added errror handling
+      if (length(idx.apex.ms1) == 0) {
+        return(NULL)
+      }
+      if (idx.apex.ms1 > length(spec.exp.ext)) { 
+        return(NULL)
+      }
+      ##added errror handling
+      
       spec.apex <- spec.exp.ext[[idx.apex.ms1]]
       idx.ms2.intfilter <- which(spec.apex[,2] >= int.filter &
                                    spec.apex[, 1] <= mz.max)
